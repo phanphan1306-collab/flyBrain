@@ -1,0 +1,76 @@
+{
+  "status": "synthetic_pilot_not_paper_result",
+  "conditions": {
+    "clean": {
+      "cue_flip_probability": 0.0,
+      "landmark_dropout": 0.0,
+      "landmark_noise_probability": 0.0,
+      "turn_noise_probability": 0.0
+    },
+    "standard": {
+      "cue_flip_probability": 0.08,
+      "landmark_dropout": 0.35,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.1
+    },
+    "cue_corruption": {
+      "cue_flip_probability": 0.22,
+      "landmark_dropout": 0.35,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.1
+    },
+    "missing_landmarks": {
+      "cue_flip_probability": 0.08,
+      "landmark_dropout": 0.8,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.2
+    },
+    "combined": {
+      "cue_flip_probability": 0.22,
+      "landmark_dropout": 0.8,
+      "landmark_noise_probability": 0.2,
+      "turn_noise_probability": 0.2
+    }
+  },
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "config_other_fields": {
+    "sectors": 16,
+    "cue_bits": 48,
+    "kenyon_cells": 512,
+    "kc_connections": 6,
+    "kc_threshold": 4,
+    "memory_ticks": 8,
+    "ring_ticks": 8,
+    "episode_steps": 24,
+    "train_repeats": 5,
+    "contexts": 8,
+    "learning_rate": 0.14,
+    "cue_flip_probability": 0.08,
+    "landmark_dropout": 0.35,
+    "landmark_noise_probability": 0.1,
+    "turn_noise_probability": 0.1
+  },
+  "comparison": "paired arms per episode; independent seeds are aggregation units",
+  "note": "No hyperparameter selection on these outputs; do not claim published-model replication."
+}

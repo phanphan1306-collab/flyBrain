@@ -1,0 +1,11 @@
+condition,metric,comparison,n_seeds,mean_paired_delta,bootstrap_95_low,bootstrap_95_high
+clean,goal_accuracy,mb_cx_minus_direct_cx,20,0.00625,-0.0125,0.025
+clean,steering_accuracy,mb_cx_minus_direct_cx,20,0.16396454921840659,0.11701751579510201,0.2150925564456993
+standard,goal_accuracy,mb_cx_minus_direct_cx,20,0.02447916666666667,0.01614583333333334,0.03463541666666666
+standard,steering_accuracy,mb_cx_minus_direct_cx,20,0.15128800634009273,0.1211045118960448,0.18116927175564873
+cue_corruption,goal_accuracy,mb_cx_minus_direct_cx,20,-0.04583333333333333,-0.05807291666666666,-0.03333333333333334
+cue_corruption,steering_accuracy,mb_cx_minus_direct_cx,20,0.12111100332666254,0.08990509615363304,0.15209595184341324
+missing_landmarks,goal_accuracy,mb_cx_minus_direct_cx,20,0.02447916666666667,0.01614583333333334,0.034635416666666675
+missing_landmarks,steering_accuracy,mb_cx_minus_direct_cx,20,0.1331239252867433,0.10333215966489176,0.16391942659136166
+combined,goal_accuracy,mb_cx_minus_direct_cx,20,-0.04583333333333333,-0.057812499999999975,-0.033333333333333326
+combined,steering_accuracy,mb_cx_minus_direct_cx,20,0.10057714810220952,0.07507246788745346,0.1264330114144488

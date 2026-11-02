@@ -1,0 +1,105 @@
+{
+  "status": "synthetic_development_comparison_not_paper_result",
+  "seeds": [
+    200,
+    201,
+    202,
+    203,
+    204
+  ],
+  "conditions": {
+    "clean": {
+      "cue_flip_probability": 0.0,
+      "landmark_dropout": 0.0,
+      "landmark_noise_probability": 0.0,
+      "turn_noise_probability": 0.0
+    },
+    "standard": {
+      "cue_flip_probability": 0.08,
+      "landmark_dropout": 0.35,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.1
+    },
+    "cue_corruption": {
+      "cue_flip_probability": 0.22,
+      "landmark_dropout": 0.35,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.1
+    },
+    "missing_landmarks": {
+      "cue_flip_probability": 0.08,
+      "landmark_dropout": 0.8,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.1
+    },
+    "turn_corruption": {
+      "cue_flip_probability": 0.08,
+      "landmark_dropout": 0.35,
+      "landmark_noise_probability": 0.1,
+      "turn_noise_probability": 0.2
+    },
+    "combined": {
+      "cue_flip_probability": 0.22,
+      "landmark_dropout": 0.8,
+      "landmark_noise_probability": 0.2,
+      "turn_noise_probability": 0.2
+    }
+  },
+  "config": {
+    "sectors": 16,
+    "cue_bits": 48,
+    "kenyon_cells": 512,
+    "kc_connections": 6,
+    "kc_threshold": 4,
+    "memory_ticks": 8,
+    "ring_ticks": 8,
+    "episode_steps": 24,
+    "train_repeats": 5,
+    "contexts": 8,
+    "learning_rate": 0.14,
+    "cue_flip_probability": 0.08,
+    "landmark_dropout": 0.35,
+    "landmark_noise_probability": 0.1,
+    "turn_noise_probability": 0.1
+  },
+  "arms": {
+    "direct_cx": {
+      "family": "direct",
+      "threshold": null,
+      "input_synapses": 0,
+      "trainable_synapses": 768
+    },
+    "dense_expansion_cx": {
+      "family": "dense_expansion",
+      "threshold": 1,
+      "input_synapses": 3072,
+      "trainable_synapses": 8192
+    },
+    "mb_sparse_t3_cx": {
+      "family": "sparse_expansion",
+      "threshold": 3,
+      "input_synapses": 3072,
+      "trainable_synapses": 8192
+    },
+    "mb_sparse_t4_cx": {
+      "family": "sparse_expansion",
+      "threshold": 4,
+      "input_synapses": 3072,
+      "trainable_synapses": 8192
+    },
+    "mb_sparse_t5_cx": {
+      "family": "sparse_expansion",
+      "threshold": 5,
+      "input_synapses": 3072,
+      "trainable_synapses": 8192
+    },
+    "direct_budget_cx": {
+      "family": "direct_parameter_budget",
+      "threshold": null,
+      "input_synapses": 512,
+      "trainable_synapses": 8192
+    }
+  },
+  "budget_definition": "Allocated trainable cue/expansion-to-goal synapses; shared CX and steering excluded.",
+  "warning": "Direct budget repeats cue channels; equal parameter count does not imply equal information, expressivity, or SOP."
+}

@@ -1,0 +1,27 @@
+{
+  "sha256_code": {
+    "__init__.py": "61dda50bc8364c08d4701ac00b8be0bd3057410288894d805f9cf1d7f165e2c4",
+    "benchmark.py": "9ff5fc07be4923a5943e743bd6fcea6cc86b74156cf95f7af7ff711ac5081105",
+    "model.py": "235152d48b8ca4a53a9275d592e7877f1798a09fb49075daeedf3e487111f657",
+    "paired_analysis.py": "26a0b0be574371d47b007e2b8b4a8a5d995912ebdbba05219322716042aef79d",
+    "plot_results.py": "c84f573da16c004024649c73ae3990bc390d44aa082f37273b255eae5645a901",
+    "provenance.py": "45f47948bb65e5864adfe711abfb106a2bd3b901d31de012442a57c0875c03d5",
+    "sweep.py": "ca6e4bc07ef744a2c500ab0de316f9289624446ede462746de2f3669bdbb5d60"
+  },
+  "sha256_results": {
+    "trials.csv": "50d8aec9caca0ca81d92d1fa554cd22d40384bc07d5168914b0ac18a8c52a890",
+    "summary_by_seed.csv": "478f1631694cb00f4adf44867340be964285f6c45449427bc3336b8ee7530318",
+    "summary_aggregate.csv": "84c239a0f4eb2247a9a845104f6e9cc980080ad73c6d7ee1cddf2dde21909e23",
+    "paired_deltas.csv": "c44ea889fa06b892c5cdbd5ee7f66d626876f285deacdff3c92aa04c480118c0",
+    "baseline_summary.png": "30104609ad8dd64a0813ce92ac57304de6844fff536f928d2dca28ecea335ef7",
+    "manifest.json": "4ec6b0c6839ebd20b9264ea95881c6c2d189b1e385e3b96295446d038bd17c6f"
+  },
+  "python": "3.11.5",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "literature": {
+    "Stentiford_2024": "https://doi.org/10.1371/journal.pcbi.1011913",
+    "Ardin_2016": "https://doi.org/10.1371/journal.pcbi.1004683",
+    "Goulard_2023": "https://doi.org/10.1371/journal.pcbi.1011480"
+  }
+}

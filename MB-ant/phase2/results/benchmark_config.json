@@ -1,0 +1,36 @@
+{
+  "log_file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\FlyBrain\\MB_ant\\phase2\\results\\synthetic_heading.jsonl",
+  "origin": "synthetic",
+  "validation_run_ids": [
+    "synthetic_validation_drift_alias_0",
+    "synthetic_validation_drift_alias_1",
+    "synthetic_validation_drift_dropout_0",
+    "synthetic_validation_drift_dropout_1",
+    "synthetic_validation_strong_drift_0",
+    "synthetic_validation_strong_drift_1"
+  ],
+  "test_run_ids": [
+    "synthetic_test_drift_alias_0",
+    "synthetic_test_drift_alias_1",
+    "synthetic_test_drift_dropout_0",
+    "synthetic_test_drift_dropout_1",
+    "synthetic_test_strong_drift_0",
+    "synthetic_test_strong_drift_1"
+  ],
+  "selection_objective": "validation circular MAE + 0.25 * validation p95 error",
+  "initial_heading": "truth at first frame + 5 degrees, shared by all methods",
+  "visual_gain": 0.5,
+  "max_correction_deg": 8.0,
+  "tuned_on_validation": {
+    "confidence": {
+      "min_confidence": 0.08,
+      "direct_gate_deg": 180.0,
+      "confidence_reference": 0.05
+    },
+    "full_gate": {
+      "min_confidence": 0.02,
+      "direct_gate_deg": 20.0,
+      "confidence_reference": 0.05
+    }
+  }
+}

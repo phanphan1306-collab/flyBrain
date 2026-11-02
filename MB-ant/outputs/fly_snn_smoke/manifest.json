@@ -1,0 +1,29 @@
+{
+  "status": "synthetic_pilot_not_paper_result",
+  "model_provenance": "new minimal SNN modules, not paper reproduction",
+  "config": {
+    "sectors": 16,
+    "cue_bits": 48,
+    "kenyon_cells": 512,
+    "kc_connections": 6,
+    "kc_threshold": 4,
+    "memory_ticks": 8,
+    "ring_ticks": 8,
+    "episode_steps": 24,
+    "train_repeats": 5,
+    "contexts": 8,
+    "learning_rate": 0.14,
+    "cue_flip_probability": 0.08,
+    "landmark_dropout": 0.35,
+    "landmark_noise_probability": 0.1
+  },
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "python": "3.11.5",
+  "numpy": "2.4.6",
+  "n_trial_rows": 2304,
+  "split": "clean prototype training; independent noisy test episodes"
+}

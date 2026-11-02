@@ -1,0 +1,18 @@
+{
+  "source_files": 98,
+  "ants": 15,
+  "route_images": 1223,
+  "angular_scans": 1231,
+  "sector_scores": 75091,
+  "scan_ties": 225,
+  "scan_tie_fraction": 0.1827782290820471,
+  "assisted_resets": 38,
+  "ants_without_reset": 1,
+  "en_pre_mean_spikes_per_image": 12.66312346688471,
+  "en_post_mean_spikes_per_image": 0.7522485690923958,
+  "en_post_zero_images": 781,
+  "en_post_zero_fraction": 0.6385936222403925,
+  "kc_active_fraction_mean": 0.012672431180158079,
+  "all_last_positions_within_nest_radius": true,
+  "kc_fired_total_invalid_shape_count": 15
+}

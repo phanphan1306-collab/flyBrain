@@ -1,0 +1,10 @@
+record=source_data\result\Record1_route1.mat
+raw_images=source_data\result\Raw_images_ant1_route1.mat
+images=80
+activity_length_each=240 (expected 240)
+EN_zero_both_count=0
+numKC=20000 from ant_route_following_test.m:82
+KC_activity counts neurons with >=1 spike, not total KC spikes.
+KC_fired_total excluded: original code has inconsistent indexing.
+Seed and pre-training weight snapshot are not stored in Record.
+Lower EN spike count is a model familiarity proxy, not proof of learning by itself.
